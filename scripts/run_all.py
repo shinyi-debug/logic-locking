@@ -1,17 +1,5 @@
 #!/usr/bin/env python3
-"""
-run_all.py
-==========
-Runs the complete logic locking experiment suite:
-  1. XOR locking + SAT attack across all 4 ISCAS-85 benchmarks
-  2. LUT-Lock + SAT attack on c432_small
-  3. LUT-Lock + Anti-SAT + SAT attack on c432_small
-  4. Saves one combined comparison plot + summary table
 
-Usage:
-    python3 scripts/run_all.py
-    python3 scripts/run_all.py --out results/full_comparison.png
-"""
 
 import sys, os, time, io, contextlib, argparse
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__))))
